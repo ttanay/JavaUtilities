@@ -7,7 +7,7 @@ public class DbConnect {
 		public String connectedDB = null, dbName = null;
 		public boolean connected = false;
 		
-	public void connect(String name){
+	public DbConnect(String name){
 		con = null;
 		if(name.equals(null))
 			name = "Practice";

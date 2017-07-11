@@ -13,7 +13,7 @@ public class DbConnect {
 			name = "Practice";
 		try{
 			Class.forName("org.postgresql.Driver");
-			//con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Practice", "postgres", "password");
+			//Change DB details 
 			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + name, "postgres", "password");
 			System.out.println("Opened Database \"" + name + "\" successfully");
 			connectedDB = name;
